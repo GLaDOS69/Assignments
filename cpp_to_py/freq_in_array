@@ -1,0 +1,14 @@
+def find_frequency(array, element):
+  frequency = 0
+
+  for i in array:
+    if i == element:
+      frequency += 1
+
+  return frequency
+
+# Test the function
+array = [1, 2, 3, 2, 3, 2, 3, 4, 5]
+element = 2
+frequency = find_frequency(array, element)
+print(f'The frequency of {element} in the array is {frequency}.')
